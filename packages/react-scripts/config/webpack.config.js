@@ -179,6 +179,12 @@ module.exports = function (webpackEnv) {
         paths.appBackgroundJs,
       ].filter(Boolean),
       contentScript: paths.appContentScriptJs,
+      injected: [
+        isEnvDevelopment &&
+          require.resolve('webpack-dev-server/client') +
+            '?http://localhost:4000',
+        paths.appInjectedJs,
+      ].filter(Boolean),
     },
     output: {
       // The build folder.
