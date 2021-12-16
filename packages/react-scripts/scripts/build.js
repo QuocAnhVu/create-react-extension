@@ -63,7 +63,7 @@ if (
     paths.appIndexJs,
     paths.appBackgroundJs,
     paths.appContentScriptJs,
-    paths.appInjectedJs,
+    paths.appInpageJs,
     paths.appOptionsHtml,
     paths.appOptionsJs,
   ])

@@ -56,7 +56,7 @@ module.exports = {
   appIndexJs: resolveModule(resolveApp, 'src/index'),
   appBackgroundJs: resolveModule(resolveApp, 'src/background/index'),
   appContentScriptJs: resolveModule(resolveApp, 'src/contentScript/index'),
-  appInjectedJs: resolveModule(resolveApp, 'src/injected/index'),
+  appInpageJs: resolveModule(resolveApp, 'src/inpage/index'),
   appOptionsJs: resolveModule(resolveApp, 'src/options/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
@@ -83,7 +83,7 @@ module.exports = {
   appIndexJs: resolveModule(resolveApp, 'src/index'),
   appBackgroundJs: resolveModule(resolveApp, 'src/background/index'),
   appContentScriptJs: resolveModule(resolveApp, 'src/contentScript/index'),
-  appInjectedJs: resolveModule(resolveApp, 'src/injected/index'),
+  appInpageJs: resolveModule(resolveApp, 'src/inpage/index'),
   appOptionsJs: resolveModule(resolveApp, 'src/options/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
@@ -129,9 +129,9 @@ if (
       resolveOwn,
       `${templatePath}/src/contentScript/index`
     ),
-    appInjectedJs: resolveModule(
+    appInpageJs: resolveModule(
       resolveOwn,
-      `${templatePath}/src/injected/index`
+      `${templatePath}/src/inpage/index`
     ),
     appOptionsJs: resolveModule(
       resolveOwn,
