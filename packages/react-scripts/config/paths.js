@@ -53,7 +53,7 @@ module.exports = {
   manifestJson: resolveApp('public/manifest.json'),
   appOptionsHtml: resolveApp('public/options.html'),
   appPopupHtml: resolveApp('public/popup.html'),
-  appIndexJs: resolveModule(resolveApp, 'src/index'),
+  appPopupJs: resolveModule(resolveApp, 'src/popup/index'),
   appBackgroundJs: resolveModule(resolveApp, 'src/background/index'),
   appContentScriptJs: resolveModule(resolveApp, 'src/contentScript/index'),
   appInpageJs: resolveModule(resolveApp, 'src/inpage/index'),
@@ -80,7 +80,7 @@ module.exports = {
   manifestJson: resolveApp('public/manifest.json'),
   appOptionsHtml: resolveApp('public/options.html'),
   appPopupHtml: resolveApp('public/popup.html'),
-  appIndexJs: resolveModule(resolveApp, 'src/index'),
+  appPopupJs: resolveModule(resolveApp, 'src/popup/index'),
   appBackgroundJs: resolveModule(resolveApp, 'src/background/index'),
   appContentScriptJs: resolveModule(resolveApp, 'src/contentScript/index'),
   appInpageJs: resolveModule(resolveApp, 'src/inpage/index'),
@@ -120,7 +120,7 @@ if (
     manifestJson: resolveApp(`${templatePath}/public/manifest.json`),
     appPopupHtml: resolveOwn(`${templatePath}/public/popup.html`),
     appOptionsHtml: resolveOwn(`${templatePath}/public/options.html`),
-    appIndexJs: resolveModule(resolveOwn, `${templatePath}/src/index`),
+    appPopupJs: resolveModule(resolveOwn, `${templatePath}/src/popup/index`),
     appBackgroundJs: resolveModule(
       resolveOwn,
       `${templatePath}/src/background/index`

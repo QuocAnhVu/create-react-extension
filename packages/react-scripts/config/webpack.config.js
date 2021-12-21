@@ -160,11 +160,11 @@ module.exports = function (webpackEnv) {
     // These are the "entry points" to our application.
     // This means they will be the "root" imports that are included in JS bundle.
     entry: {
-      app: [
+      popup: [
         isEnvDevelopment &&
           require.resolve('webpack-dev-server/client') +
             '?http://localhost:4000',
-        paths.appIndexJs,
+        paths.appPopupJs,
       ].filter(Boolean),
       options: [
         isEnvDevelopment &&
@@ -561,7 +561,7 @@ module.exports = function (webpackEnv) {
           {
             inject: true,
             template: paths.appPopupHtml,
-            chunks: ['app'],
+            chunks: ['popup'],
             filename: 'popup.html',
           },
           isEnvProduction

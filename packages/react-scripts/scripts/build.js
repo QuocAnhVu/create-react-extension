@@ -60,7 +60,7 @@ if (
   !checkRequiredFiles([
     paths.appPopupHtml,
     paths.manifestJson,
-    paths.appIndexJs,
+    paths.appPopupJs,
     paths.appBackgroundJs,
     paths.appContentScriptJs,
     paths.appInpageJs,
